@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway&display=swap');
+
+/* 
+font-family: 'Forum', cursive;
+font-family: 'Raleway', sans-serif;
+*/
+
+:root {
+    /* Colour pallet 1 burgundy*/
+    --red: #989A9B;
+    --white: #FFFFFF;
+    --grey: #2B3A2D;
+    --black: #000000;
+    --charcol: #26242a;
+    --charcol-trans: rgba(38, 36, 42, 0.5);
+
+    /* Colour pallet 2 sage green */
+    /* --red: #B2AC88;
+    --white: #FFFFFF;
+    --grey: #c3c1c1;
+    --black: #000000;
+    --charcol: #26242a;
+    --charcol-trans: rgba(38, 36, 42, 0.5); */
+
+    /* Colour pallet 2 green */
+    /* --red: #2C2C2C;
+    --white: #FFFFFF;
+    --grey: #CACACA;
+    --black: #000000;
+    --charcol: #191919;
+    --charcol-trans: rgba(25, 25, 25, 0.5); */
+
+    /* Colour pallet 2 sage green */
+    /* --red: #8C6F56;
+    --white: #FFFFFF;
+    --grey: #D9BCA3;
+    --black: #000000;
+    --charcol: #731717;
+    --charcol-trans: rgba(140, 111, 86, 0.5); */
+
+    /* Colour pallet 3 taupe */
+    /* --red: #ab8e7a;
+    --white: #FFFFFF;
+    --grey: #c3c1c1;
+    --black: #000000;
+    --charcol: #26242a; 
+    --charcol-trans: rgba(38, 36, 42, 0.5); */
+   
+
+    /* Colour pallet 3 aqua */
+    /* --red: #557373;
+    --white: #FFFFFF;
+    --grey: #c3c1c1;
+    --black: #000000;
+    --charcol: #26242a; 
+    --charcol-trans: rgba(38, 36, 42, 0.5); */
+   
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--white);
+    letter-spacing: 1px;
+}
+
+.navbar {
+    color: var(--white);
+    z-index: 999;
+    padding: 2em 3em;
+    transition: background 300ms ease-in;
+    background: transparent;
+    height: 10rem;
+    font-family: 'Forum', cursive;
+    text-transform: uppercase;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.header-text {
+    margin-bottom: 8rem;
+    background-color: rgba(38, 36, 42, 0.7);
+}
+
+.nav-links {
+    font-size: 2rem;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+    transform: scale(1.05,1.05);
+    border-bottom: 2px solid var(--red);
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.nav-scrolled {
+    color: var(--charcol);
+    background: var(--white);
+    box-shadow: 0 2px 1rem var(--charcol);
+    border-bottom: 2px solid var(--charcol);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.nav-logo {
+    width: 15rem;
+}
+
+.hero-image {
+    background-image: url("../images/open.jpg");
+    background-color: var(--charcol-trans);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.text-charcol {
+    color: charcol;
+}
+
+.card {
+    height: 25rem;
+    width: 35rem;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.box-shaddow-color-red {
+    box-shadow: 0px 0px 10px 2px var(--red);
+}
+
+.box-shaddow-color-grey {
+    box-shadow: 0px 0px 10px 2px var(--grey);
+}
+
+.box-shaddow-color-white {
+    box-shadow: 0px 0px 10px 2px var(--white);
+}
+
+.box-shaddow-color-charcol {
+    box-shadow: 0px 0px 10px 2px var(--charcol);
+}
+
+
+.card-charcol {
+    background-color: var(--charcol);
+}
+
+.card-white {
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 1rem;
+    color: var(--charcol);
+}
+
+.card-grey {
+    background-color: var(--grey);
+    border: 2px solid var(--grey);
+    border-radius: 1rem;
+    color: var(--charcol);
+}
+
+.card-red {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 1rem;
+    /* color: var(--white); */
+}
+
+.card-black {
+    background-color: var(--charcol);
+    border: 2px solid var(--charcol);
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+.my-container {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.container-1 {
+    background-color: var(--charcol-trans);
+    color: var(--white);
+    position: absolute;
+}
+
+.container-2 {
+    background-color: var(--red);
+    color: var(--charcol);
+}
+
+.container-3 {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.container-4 {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.container-5 {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.container-6 {
+    background-color: var(--charcol);
+    color: var(--white);
+}
